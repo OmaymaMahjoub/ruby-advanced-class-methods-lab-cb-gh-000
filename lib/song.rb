@@ -24,6 +24,7 @@ class Song
       if s.name==name
         return s
       end
+    end
     return nil
   end
 
