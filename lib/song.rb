@@ -12,6 +12,7 @@ class Song
 
   def create
     save
+    return self
   end
 
   def new_by_name(name)
