@@ -11,7 +11,7 @@ class Song
   end
 
   def self.create
-    save
+    @all<<self
     return self
   end
 
