@@ -18,6 +18,7 @@ class Song
   def self.new_by_name(name)
     @name=name
     save
+    return self
   end
 
   def self.find_by_name(name)
@@ -31,8 +32,7 @@ class Song
 
   def self.find_or_create_by_name(name)
     if find_by_name(name)==nil
-      create_by_name(name)
-      return self
+      return create_by_name(name)
     else
       return find_by_name(name)
     end
